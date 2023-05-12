@@ -1243,7 +1243,7 @@
                             <div class="card mt-3 card-link text-center">
                                 <card class="card-body">
                                     <h2>Participantes por edad y género</h2>
-                                    <div id="chart-by-gen" ></div>
+                                    <div id="chart-by-gen"></div>
                                 </card>
                             </div>
                         </div>
@@ -1319,11 +1319,16 @@
                 opacity: 0.9,
             },
             series: [{
+                name: "Total trabajadores",
+                data: [6, 6, 7, 5, 5, 9, 11, 7, 8, 4, 4]
+            },
+            {
                 name: "Hombres",
-                data: [2,3,5,5,4,5,6,3,2,2,1]
-            }, {
+                data: [2, 3, 5, 5, 4, 5, 6, 3, 2, 2, 1]
+            },
+            {
                 name: "Mujeres",
-                data: [3,3,2,2,3,4,5,4,6,2,3]
+                data: [3, 3, 2, 2, 3, 4, 5, 4, 6, 2, 3]
             }],
             tooltip: {
                 theme: 'dark'
@@ -1357,7 +1362,7 @@
                     padding: 4
                 },
             },
-            colors: ['#206bc4', '#4299e1'],
+            colors: ['#0b956c', '#206bc4', '#4299e1'],
             legend: {
                 show: true,
                 position: 'bottom',
