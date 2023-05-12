@@ -34,7 +34,7 @@
 
     <!-- Navbar -->
     <div class="mb-3">
-        <header class="navbar navbar-expand-md navbar-light d-print-none">
+        <header class="navbar navbar-expand-md navbar-dark d-print-none">
             <div class="container-xl">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
                     aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -444,29 +444,31 @@
                             </li>
 
                         </ul>
-                        <div class="my-2 my-md-0 flex-grow-1 flex-md-grow-0 order-first order-md-last">
-                            <form action="./" method="get" autocomplete="off" novalidate>
-                                <div class="input-icon">
-                                    <span class="input-icon-addon">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            class="icon icon-tabler icon-tabler-building" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M3 21l18 0"></path>
-                                            <path d="M9 8l1 0"></path>
-                                            <path d="M9 12l1 0"></path>
-                                            <path d="M9 16l1 0"></path>
-                                            <path d="M14 8l1 0"></path>
-                                            <path d="M14 12l1 0"></path>
-                                            <path d="M14 16l1 0"></path>
-                                            <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
-                                        </svg>
-                                    </span>
-                                    <input type="text" value="" class="form-control"
-                                        placeholder="Buscar nombre de empresa..." aria-label="Search in website">
+
+                        <div class="col-md-3 col-lg-3">
+                            <div class="card">
+                                <a href="#" class="btn btn-ghost-info" data-bs-toggle="modal"
+                                    data-bs-target="#modal-scrollable">
+                                    Buscar empresa
+                                </a>
+                                <div class="ribbon ribbon-top bg-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-building" width="24" height="24"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M3 21l18 0"></path>
+                                        <path d="M9 8l1 0"></path>
+                                        <path d="M9 12l1 0"></path>
+                                        <path d="M9 16l1 0"></path>
+                                        <path d="M14 8l1 0"></path>
+                                        <path d="M14 12l1 0"></path>
+                                        <path d="M14 16l1 0"></path>
+                                        <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
+                                    </svg>
                                 </div>
-                            </form>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -494,14 +496,16 @@
                 <div class="container-xl">
 
                     <!-- CARD SECTION -->
-                    <div class="row row-cards align-items-center">
+                    <div class="row row-cards">
+
 
                         <!-- CARD CLIENT (BANCO CHILE) -->
                         <div class="col-md-4 col-lg-4">
 
-                            <div class="card card-link card-link-pop">
+                            <div class="card card-link card-link-pop card-stacked" data-bs-toggle="modal"
+                                data-bs-target="#modal-scrollable-selected">
                                 <!-- YELLO STAR -->
-                                <div class="ribbon ribbon-top bg-yellow">
+                                <div class="ribbon ribbon-start bg-yellow">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                                         stroke-linecap="round" stroke-linejoin="round">
@@ -512,18 +516,24 @@
                                 </div>
 
                                 <!-- STATUS BAR -->
-                                <div class="card-status-bottom bg-yellow"></div>
+                                <div class="card-status-start bg-yellow"></div>
 
                                 <!-- CARD -->
-                                <div class="card-body">
-                                    <h3 class="card-title"><strong> Banco Chile</strong></h3>
-                                    <span class="card-subtitle ">
-                                        <span class="badge badge-outline text-orange p-2">Rut 11111111-1</span>
-                                        <!-- <span class="text-muted">11111111-1</span> -->
+                                <div class="card-body m-auto w-100 btn btn-ghost-yellow flex-column">
+                                    <h2 class="card-title">
+                                        Empresas seleccionadas
+                                    </h2>
+                                    <span class="card-subtitle">
+                                        <span class="badge badge-outline text-blue p-2">2</span>
                                     </span>
                                 </div>
                             </div>
+
+
                         </div>
+
+
+
 
                         <!-- TOTAL HOURS CARD -->
                         <div class="col-md-4 col-lg-4">
@@ -578,14 +588,16 @@
                                     </div>
                                 </div>
                                 <!-- CARD -->
-                                <div class="card-body">
+                                <div class="card-body ">
                                     <h3 class="card-title"><strong>Año</strong></h3>
                                     <span class="card-subtitle">
                                         <span class="badge badge-outline text-blue p-2">2022</span>
                                     </span>
+
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <!-- STATICS SECTION -->
@@ -899,7 +911,9 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Nombre</th>
+                                        <th>
+                                            Nombre
+                                        </th>
                                         <th>Rut</th>
                                         <th>Cant.Cursos</th>
 
@@ -1284,6 +1298,240 @@
         </div>
     </div>
 
+    <!-- SCROLLABLE MODAL -->
+    <div class="modal modal-blur fade" id="modal-scrollable" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Seleccionar empresa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- INPUT -->
+                    <div class="input-icon mb-3">
+                        <span class="input-icon-addon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M3 21l18 0"></path>
+                                <path d="M9 8l1 0"></path>
+                                <path d="M9 12l1 0"></path>
+                                <path d="M9 16l1 0"></path>
+                                <path d="M14 8l1 0"></path>
+                                <path d="M14 12l1 0"></path>
+                                <path d="M14 16l1 0"></path>
+                                <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
+                            </svg>
+                        </span>
+                        <input type="text" value="" class="form-control" placeholder="Buscar por nombre o rut...">
+                    </div>
+
+                    <!-- FORM SECTION -->
+                    <div class="form-selectgroup form-selectgroup-boxes d-flex flex-column">
+
+                        <!-- ITEM BANCO CHILE -->
+                        <label class="form-selectgroup-item flex-fill">
+                            <input type="checkbox" name="form-project-manager[]" value="1"
+                                class="form-selectgroup-input">
+
+                            <!-- CONTENT -->
+                            <div class="form-selectgroup-label d-flex align-items-center p-3 ">
+                                <div class="me-3">
+                                    <span class="form-selectgroup-check"></span>
+                                </div>
+
+                                <div class="form-selectgroup-label-content d-flex align-items-center">
+                                    <!-- AVATAR -->
+                                    <!-- <span class="avatar me-3"
+                                            style="background-image: url(./static/avatars/000m.jpg)"></span> -->
+                                    <!-- DATA -->
+                                    <div>
+                                        <div class="font-weight-medium">Banco de Chile</div>
+                                        <div class="text-muted">11111111-1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <!-- ITEM 2 -->
+                        <label class="form-selectgroup-item flex-fill">
+                            <input type="checkbox" name="form-project-manager[]" value="1"
+                                class="form-selectgroup-input">
+
+                            <!-- CONTENT -->
+                            <div class="form-selectgroup-label d-flex align-items-center p-3 ">
+                                <div class="me-3">
+                                    <span class="form-selectgroup-check"></span>
+                                </div>
+
+                                <div class="form-selectgroup-label-content d-flex align-items-center">
+                                    <!-- AVATAR -->
+                                    <!-- <span class="avatar me-3"
+                                            style="background-image: url(./static/avatars/000m.jpg)"></span> -->
+                                    <!-- DATA -->
+                                    <div>
+                                        <div class="font-weight-medium">NTT Chile</div>
+                                        <div class="text-muted">2222222-1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <!-- ITEM 3 -->
+                        <label class="form-selectgroup-item flex-fill">
+                            <input type="checkbox" name="form-project-manager[]" value="1"
+                                class="form-selectgroup-input">
+
+                            <!-- CONTENT -->
+                            <div class="form-selectgroup-label d-flex align-items-center p-3 ">
+                                <div class="me-3">
+                                    <span class="form-selectgroup-check"></span>
+                                </div>
+
+                                <div class="form-selectgroup-label-content d-flex align-items-center">
+                                    <!-- AVATAR -->
+                                    <!-- <span class="avatar me-3"
+                                            style="background-image: url(./static/avatars/000m.jpg)"></span> -->
+                                    <!-- DATA -->
+                                    <div>
+                                        <div class="font-weight-medium">IMPORTADORA DE REPUESTOS BRASIL LTDA.</div>
+                                        <div class="text-muted">33333333-1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <!-- ITEM 4 -->
+                        <label class="form-selectgroup-item flex-fill">
+                            <input type="checkbox" name="form-project-manager[]" value="1"
+                                class="form-selectgroup-input">
+
+                            <!-- CONTENT -->
+                            <div class="form-selectgroup-label d-flex align-items-center p-3 ">
+                                <div class="me-3">
+                                    <span class="form-selectgroup-check"></span>
+                                </div>
+
+                                <div class="form-selectgroup-label-content d-flex align-items-center">
+                                    <!-- AVATAR -->
+                                    <!-- <span class="avatar me-3"
+                                            style="background-image: url(./static/avatars/000m.jpg)"></span> -->
+                                    <!-- DATA -->
+                                    <div>
+                                        <div class="font-weight-medium">INVERSIONES COLLINS Y COLLINS LTDA.</div>
+                                        <div class="text-muted">23232323-1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn me-auto" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCROLLABLE MODAL SELECTED-->
+    <div class="modal modal-blur fade" id="modal-scrollable-selected" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Deseleccionar empresa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- INPUT -->
+                    <div class="input-icon mb-3">
+                        <span class="input-icon-addon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building"
+                                width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M3 21l18 0"></path>
+                                <path d="M9 8l1 0"></path>
+                                <path d="M9 12l1 0"></path>
+                                <path d="M9 16l1 0"></path>
+                                <path d="M14 8l1 0"></path>
+                                <path d="M14 12l1 0"></path>
+                                <path d="M14 16l1 0"></path>
+                                <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
+                            </svg>
+                        </span>
+                        <input type="text" value="" class="form-control" placeholder="Buscar por nombre o rut...">
+                    </div>
+
+                    <!-- FORM SECTION -->
+                    <div class="form-selectgroup form-selectgroup-boxes d-flex flex-column">
+
+                        <!-- ITEM BANCO CHILE -->
+                        <label class="form-selectgroup-item flex-fill">
+                            <input type="checkbox" name="form-project-manager[]" value="1"
+                                class="form-selectgroup-input" checked>
+
+                            <!-- CONTENT -->
+                            <div class="form-selectgroup-label d-flex align-items-center p-3 ">
+                                <div class="me-3">
+                                    <span class="form-selectgroup-check"></span>
+                                </div>
+
+                                <div class="form-selectgroup-label-content d-flex align-items-center">
+                                    <!-- AVATAR -->
+                                    <!-- <span class="avatar me-3"
+                                            style="background-image: url(./static/avatars/000m.jpg)"></span> -->
+                                    <!-- DATA -->
+                                    <div>
+                                        <div class="font-weight-medium">Banco de Chile</div>
+                                        <div class="text-muted">11111111-1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <!-- ITEM 3 -->
+                        <label class="form-selectgroup-item flex-fill">
+                            <input type="checkbox" checked name="form-project-manager[]" value="1"
+                                class="form-selectgroup-input">
+
+                            <!-- CONTENT -->
+                            <div class="form-selectgroup-label d-flex align-items-center p-3 ">
+                                <div class="me-3">
+                                    <span class="form-selectgroup-check"></span>
+                                </div>
+
+                                <div class="form-selectgroup-label-content d-flex align-items-center">
+                                    <!-- AVATAR -->
+                                    <!-- <span class="avatar me-3"
+                                            style="background-image: url(./static/avatars/000m.jpg)"></span> -->
+                                    <!-- DATA -->
+                                    <div>
+                                        <div class="font-weight-medium">IMPORTADORA DE REPUESTOS BRASIL LTDA.</div>
+                                        <div class="text-muted">33333333-1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn me-auto" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- Libs JS -->
     <!-- Tabler Core -->
     <script src="./dist/js/tabler.min.js?1674944402" defer></script>
@@ -1382,8 +1630,6 @@
         var chart = new ApexCharts(document.querySelector("#chart-by-gen"), options);
         chart.render();
     </script>
-
-
 </body>
 
 </html>
