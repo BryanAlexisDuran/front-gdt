@@ -448,7 +448,10 @@
                                 <div class="input-icon">
                                     <span class="input-icon-addon">
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-building" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path d="M3 21l18 0"></path>
                                             <path d="M9 8l1 0"></path>
@@ -458,7 +461,7 @@
                                             <path d="M14 12l1 0"></path>
                                             <path d="M14 16l1 0"></path>
                                             <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
-                                         </svg>
+                                        </svg>
                                     </span>
                                     <input type="text" value="" class="form-control"
                                         placeholder="Buscar nombre de empresa..." aria-label="Search in website">
@@ -492,7 +495,7 @@
 
                     <div class="row row-cards align-items-center">
 
-                        <!-- CHART HOURS BY SEX -->
+                        <!-- CHART HOURS BY GEN -->
                         <div class="col-md-6 col-lg-6">
                             <div class="card">
                                 <div class="card-body">
@@ -667,299 +670,312 @@
 
 
                     </div>
+
+                    <!-- CHART BY MONTH AND GEN -->
                     <div class="row row-cards mt-3 mb-3">
-                        <div class="col-md-12 col-lg-6 text-center">
-                            <h2>Trabajadores inscritos por mes y género</h2>
-                            <div id="chart2" class="w-100"></div>
-                        </div>
+                        <div class="col-md-12 col-lg-12 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2>Trabajadores inscritos por mes y género</h2>
+                                    <div id="chart-by-month-and-gen" class="mt-3"></div>
 
-
-                        <!-- CHART BY GEN AND SEX -->
-                        <div class="col-md-12 col-lg-6 text-center">
-                            <h2>Trabajadores inscritos por género y generación</h2>
-                            <div id="chart" class="w-100">
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- DIMENSIONES -->
-                    <div class="row g-2 align-items-center mt-4">
-                        <div class="col">
-                            <h2 class="page-title">
-                                Dimensiones
-                            </h2>
+                    <div class="row row-cards">
+
+                        <!-- CHART BY GEN AND GEN -->
+                        <div class="col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2>Trabajadores inscritos por género y generación</h2>
+                                    <div id="chart" class="w-100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- CHART BY DIVISION -->
+                        <div class="col-md-8 col-lg-8">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2>Trabajadores por división</h2>
+                                    <div id="chart-division"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="row row-cards mt-3 mb-3 text-center align-items-center">
-                        <div class="col-md-12 col-lg-12">
-                            <h2>Trabajadores por división</h2>
-                            <div id="chart-division" class="w-100"></div>
-                        </div>
-                    </div>
                 </div>
+                <!-- FOOTER -->
+                <footer class="footer footer-transparent d-print-none m-auto">
+                    <div class="container-xl">
+                        <div class="row text-center align-items-center flex-row-reverses">
 
+                            <div class="col-lg-auto ms-lg-auto">
+                                <ul class="list-inline list-inline-dots mb-0">
+                                    <li class="list-inline-item"><a href="./docs/" class="link-secondary">Soporte</a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="./license.html" class="link-secondary">Centro
+                                            de
+                                            ayuda</a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="https://github.com/tabler/tabler"
+                                            target="_blank" class="link-secondary" rel="noopener">Privacidad</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                                <ul class="list-inline list-inline-dots mb-0">
+                                    <li class="list-inline-item">
+                                        &copy; 2023 - Banotic todos los derechos reservados -
+                                        <a href="." class="link-secondary">Desarrollado por Devits</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
-            <!-- FOOTER -->
-            <footer class="footer footer-transparent d-print-none m-auto">
-                <div class="container-xl">
-                    <div class="row text-center align-items-center flex-row-reverses">
-
-                        <div class="col-lg-auto ms-lg-auto">
-                            <ul class="list-inline list-inline-dots mb-0">
-                                <li class="list-inline-item"><a href="./docs/" class="link-secondary">Soporte</a>
-                                </li>
-                                <li class="list-inline-item"><a href="./license.html" class="link-secondary">Centro
-                                        de
-                                        ayuda</a>
-                                </li>
-                                <li class="list-inline-item"><a href="https://github.com/tabler/tabler" target="_blank"
-                                        class="link-secondary" rel="noopener">Privacidad</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-lg-auto mt-3 mt-lg-0">
-                            <ul class="list-inline list-inline-dots mb-0">
-                                <li class="list-inline-item">
-                                    &copy; 2023 - Banotic todos los derechos reservados -
-                                    <a href="." class="link-secondary">Desarrollado por Devits</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
-    </div>
 
-    <!-- Libs JS -->
-    <!-- Tabler Core -->
-    <script src="../dist/js/tabler.min.js?1674944402" defer></script>
-    <script src="../dist/js/demo.min.js?1674944402" defer></script>
-    <script src="../dist/js/chart.js" defer></script>
+        <!-- Libs JS -->
+        <!-- Tabler Core -->
+        <script src="../dist/js/tabler.min.js?1674944402" defer></script>
+        <script src="../dist/js/demo.min.js?1674944402" defer></script>
+        <script src="../dist/js/chart.js" defer></script>
 
-    <!-- ChartS -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <!-- ChartS -->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-    <!-- CHART 1 -->
-    <script>
-        var options = {
-            series: [
-                {
-                    name: "Mujeres",
-                    data: [21, 10, 18]
+        <!-- CHART BY GEN AND GEN -->
+        <script>
+            var options = {
+                chart: {
+                    type: "donut",
+                    fontFamily: 'inherit',
+                    height: 240,
+                    sparkline: {
+                        enabled: true
+                    },
+                    animations: {
+                        enabled: false
+                    },
                 },
-                {
-                    name: "Hombres",
-                    data: [10, 22, 19]
-                }
-            ],
-            chart: {
-                height: 350,
-                type: 'line',
-                dropShadow: {
-                    enabled: true,
-                    color: '#000',
-                    top: 18,
-                    left: 7,
-                    blur: 10,
-                    opacity: 0.2
+                fill: {
+                    opacity: 1,
                 },
-                toolbar: {
-                    show: false
-                }
-            },
-            colors: ['#77B6EA', '#545454'],
-            dataLabels: {
-                enabled: true,
-            },
-            stroke: {
-                curve: 'smooth'
-            },
-            title: {
-                text: '',
-                align: 'left'
-            },
-            grid: {
-                borderColor: '#e7e7e7',
-                row: {
-                    colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-                    opacity: 0.5
+                series: [44, 55, 12, 2],
+                labels: ["GEN Z", "GEN B", "GEN M", "GEN X"],
+                tooltip: {
+                    theme: 'dark'
                 },
-            },
-            markers: {
-                size: 1
-            },
-            xaxis: {
-                categories: ['Z', 'M', 'B'],
-                title: {
-                    text: 'Generación'
-                }
-            },
-            yaxis: {
-                title: {
-                    text: 'Cantidad'
+                grid: {
+                    strokeDashArray: 4,
                 },
-                min: 5,
-                max: 40
-            },
-            legend: {
-                position: 'top',
-                horizontalAlign: 'right',
-                floating: true,
-                offsetY: -25,
-                offsetX: -5
+                colors: ['#1877F2', '#17a2b8', '#2aa13d', '#f76707'],
+                legend: {
+                    show: true,
+                    position: 'bottom',
+                    offsetY: 12,
+                    markers: {
+                        width: 10,
+                        height: 10,
+                        radius: 100,
+                    },
+                    itemMargin: {
+                        horizontal: 8,
+                        vertical: 8
+                    },
+                },
+                tooltip: {
+                    fillSeriesColor: false
+                },
             }
-        };
 
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
-    </script>
+            var chart = new ApexCharts(document.querySelector("#chart"), options);
+            chart.render();
+        </script>
 
-    <!-- CHART 2 -->
-    <script>
-
-
-        var options = {
-            series: [{
-                name: 'Hombres',
-                data: [44, 55, 57, 56, 61, 58, 76, 98, 66]
-            }, {
-                name: 'Mujeres',
-                data: [76, 85, 101, 98, 33, 46, 82, 114, 94]
-            }],
-            chart: {
-                type: 'bar',
-                height: 350
-            },
-            plotOptions: {
-                bar: {
-                    horizontal: false,
-                    columnWidth: '55%',
-                    endingShape: 'rounded'
-                },
-            },
-            dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                show: true,
-                width: 2,
-                colors: ['transparent']
-            },
-            xaxis: {
-                categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
-            },
-            yaxis: {
-                title: {
-                    text: 'Cantidad trabajadores'
-                }
-            },
-            fill: {
-                opacity: 1
-            },
-            // tooltip: {
-            //     y: {
-            //         formatter: function (val) {
-            //             return "$ " + val + " thousands"
-            //         }
-            //     }
-            // }
-        };
-
-        var chart = new ApexCharts(document.querySelector("#chart2"), options);
-        chart.render();
-    </script>
-
-    <!-- CHART DIVISION -->
-    <script>
-
-
-        var options = {
-            series: [44, 67, 18, 26, 34, 33],
-            // series: [44, 67, 61, 90],
-            chart: {
-                height: 500,
-                type: 'radialBar',
-            },
-            plotOptions: {
-                radialBar: {
-                    offsetY: 0,
-                    startAngle: 0,
-                    endAngle: 270,
-                    hollow: {
-                        margin: 5,
-                        size: '60%',
-                        background: 'transparent',
-                        image: undefined,
-                    },
-                    dataLabels: {
-                        name: {
-                            show: true,
-                        },
-                        value: {
-                            show: false,
-                        }
-                    }
-                }
-            },
-            colors: ['#f76707', '#d63939', '#0084ff', '#0084ff', '#1ab7ea', '#1ab7ea'],
-            labels: [
-                'TRAB. CALIFICADO',
-                'TRAB. NO CALIFICADO',
-                'TRAB. CALIF. HOMBRES',
-                'TRAB. NO CALIF. HOMBRES',
-                'TRAB. CALIF. MUJERES',
-                'TRAB. NO CALIF. MUJERES',
-            ],
-            legend: {
-                show: true,
-                // floating: false,
-                fontSize: '16px',
-                position: 'left',
-                offsetX: 180,
-                offsetY: 0,
-                labels: {
-                    useSeriesColors: true,
-                },
-                markers: {
-                    size: 0
-                },
-                formatter: function (seriesName, opts) {
-                    return seriesName + ": " + opts.w.globals.series[opts.seriesIndex]
-                },
-                itemMargin: {
-                    vertical: 3
-                }
-            },
-            responsive: [{
-                breakpoint: 597,
-                options: {
-                    legend: {
+        <!-- CHART BY MONTH AND GEN -->
+        <script>
+            var options = {
+                chart: {
+                    type: "area",
+                    fontFamily: 'inherit',
+                    height: 350,
+                    parentHeightOffset: 0,
+                    toolbar: {
                         show: false,
-                        floating: true,
-                        position: 'right',
-                        fontSize: '12px',
-                        offsetX: 160,
-
-                        itemMargin: {
-                            vertical: 2,
-                        }
                     },
-                    plotOptions: {
-                        radialBar: {
-                            endAngle: 160,
-
-                        },
-
+                    animations: {
+                        enabled: false
                     },
-                }
-            }]
-        };
+                },
+                dataLabels: {
+                    enabled: false,
+                },
+                fill: {
+                    opacity: .16,
+                    type: 'solid'
+                },
+                stroke: {
+                    width: 2,
+                    lineCap: "round",
+                    curve: "smooth",
+                },
+                series: [{
+                    name: "Mujeres",
+                    data: [56, 40, 39, 47, 34, 48, 44, 33, 23, 36, 23, 37]
+                }, {
+                    name: "Hombres",
+                    data: [45, 43, 30, 23, 38, 39, 54, 21, 26, 43, 22, 13]
+                }],
+                tooltip: {
+                    theme: 'dark'
+                },
+                grid: {
+                    padding: {
+                        top: -20,
+                        right: 0,
+                        left: -4,
+                        bottom: -4
+                    },
+                    strokeDashArray: 4,
+                },
+                xaxis: {
+                    labels: {
+                        padding: 0,
+                    },
+                    tooltip: {
+                        enabled: false
+                    },
+                    axisBorder: {
+                        show: false,
+                    },
+                    type: 'datetime',
+                },
+                yaxis: {
+                    labels: {
+                        padding: 4
+                    },
+                },
+                labels: [
+                    '2022-01-30', '2022-02-30', '2022-03-30', '2022-04-30', '2022-05-30', '2022-06-30', '2022-07-30', '2022-08-30', '2022-09-30', '2022-10-30', '2022-11-30', '2022-12-30'
+                ],
+                colors: ['#d6336c', '#1d60b0'],
+                legend: {
+                    show: true,
+                    position: 'bottom',
+                    offsetY: 12,
+                    markers: {
+                        width: 10,
+                        height: 10,
+                        radius: 100,
+                    },
+                    itemMargin: {
+                        horizontal: 8,
+                        vertical: 8
+                    },
+                },
+            }
 
+            var chart = new ApexCharts(document.querySelector("#chart-by-month-and-gen"), options);
+            chart.render();
+        </script>
 
-        var chart = new ApexCharts(document.querySelector("#chart-division"), options);
-        chart.render();
-    </script>
+        <!-- CHART DIVISION -->
+        <script>
+
+            var options = {
+                chart: {
+                    type: "bar",
+                    fontFamily: 'inherit',
+                    // height: 240,
+                    parentHeightOffset: 0,
+                    toolbar: {
+                        show: false,
+                    },
+                    animations: {
+                        enabled: true
+                    },
+                    stacked: true,
+                },
+                plotOptions: {
+                    bar: {
+                        barHeight: '45%',
+                        horizontal: false,
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                },
+                fill: {
+                    opacity: 0.9,
+                },
+                series: [{
+                    name: "Total trabajadores",
+                    data: [5, 6, 7, 7, 7, 9, 11, 7, 8, 4, 4]
+                }, {
+                    name: "Hombres",
+                    data: [2, 3, 5, 5, 4, 5, 6, 3, 2, 2, 1]
+                }, {
+                    name: "Mujeres",
+                    data: [3, 3, 2, 2, 3, 4, 5, 4, 6, 2, 3]
+                }],
+                tooltip: {
+                    theme: 'dark'
+                },
+                // grid: {
+                //     padding: {
+                //         top: -20,
+                //         right: 0,
+                //         left: -4,
+                //         bottom: -4
+                //     },
+                //     strokeDashArray: 4,
+                // },
+                xaxis: {
+                    labels: {
+                        padding: 0,
+                        // formatter: function (val) {
+                        //     return val + "K"
+                        // },
+                    },
+                    tooltip: {
+                        enabled: false
+                    },
+                    axisBorder: {
+                        show: false,
+                    },
+                    categories: ['21', '22', '24', '25', '28', '33', '32', '35', '37', '44', '42'],
+                },
+                yaxis: {
+                    labels: {
+                        padding: 4
+                    },
+                },
+                colors: ['#0b956c','#206bc4', '#4299e1'],
+                legend: {
+                    show: true,
+                    position: 'bottom',
+                    offsetY: 12,
+                    markers: {
+                        width: 10,
+                        height: 10,
+                        radius: 100,
+                    },
+                    itemMargin: {
+                        horizontal: 8,
+                        vertical: 16
+                    },
+                },
+            }
+
+            var chart = new ApexCharts(document.querySelector("#chart-division"), options);
+            chart.render();
+        </script>
 </body>
 
 </html>

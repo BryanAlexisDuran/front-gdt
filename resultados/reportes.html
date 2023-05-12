@@ -671,9 +671,15 @@
                         </div>
                     </div>
             
-                    <div class="row row-cards mt-3">
+                    <!-- CHART TOTAL COURSES -->
+                    <div class="row row-cards mt-4 text-center">
                         <div class="col-md-12 cod-lg-12">
-                            <div id="chart4" style="min-height: 365px;"></div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2>Totalidad de cursos</h2>
+                                    <div id="chart4" style="min-height: 365px;"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -722,7 +728,7 @@
     <script>
         var options = {
             series: [{
-                name: 'Inflation',
+                name: 'Trabajadores',
                 data: [12, 33, 22, 21, 34, 15]
             }],
             chart: {
@@ -782,22 +788,13 @@
                     show: false,
                 },
                 labels: {
-                    show: false,
-                    formatter: function (val) {
-                        return val + "%";
-                    }
+                    show: false
+                    // formatter: function (val) {
+                    //     return val + "%";
+                    // }
                 }
 
             },
-            title: {
-                text: 'Totalidad de cursos',
-                floating: true,
-                offsetY: 330,
-                align: 'center',
-                style: {
-                    color: '#444'
-                }
-            }
         };
 
         var chart = new ApexCharts(document.querySelector("#chart4"), options);

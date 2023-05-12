@@ -551,117 +551,221 @@
                             <div id="chart5"></div>
                         </div>
                     </div>
-                </div>
 
-            </div>
-            <!-- FOOTER -->
-            <footer class="footer footer-transparent d-print-none">
-                <div class="container-xl">
-                    <div class="row text-center align-items-center flex-row-reverses">
+                    <!-- TESTING -->
+                    <div class="row row-cards">
 
-                        <div class="col-lg-auto ms-lg-auto">
-                            <ul class="list-inline list-inline-dots mb-0">
-                                <li class="list-inline-item"><a href="./docs/" class="link-secondary">Soporte</a>
-                                </li>
-                                <li class="list-inline-item"><a href="./license.html" class="link-secondary">Centro
-                                        de
-                                        ayuda</a>
-                                </li>
-                                <li class="list-inline-item"><a href="https://github.com/tabler/tabler" target="_blank"
-                                        class="link-secondary" rel="noopener">Privacidad</a></li>
-                            </ul>
+                        <div class="card">
+                            <div class="card-body">
+                                <div id="chart-demo-line" class="chart-lg"></div>
+                            </div>
                         </div>
-                        <div class="col-12 col-lg-auto mt-3 mt-lg-0">
-                            <ul class="list-inline list-inline-dots mb-0">
-                                <li class="list-inline-item">
-                                    &copy; 2023 - Banotic todos los derechos reservados -
-                                    <a href="." class="link-secondary">Desarrollado por Devits</a>
-                                </li>
-                            </ul>
+
+                        <h2>twesdfaws</h2>
+                    </div>
+
+
+
+                </div>
+                <!-- FOOTER -->
+                <footer class="footer footer-transparent d-print-none">
+                    <div class="container-xl">
+                        <div class="row text-center align-items-center flex-row-reverses">
+
+                            <div class="col-lg-auto ms-lg-auto">
+                                <ul class="list-inline list-inline-dots mb-0">
+                                    <li class="list-inline-item"><a href="./docs/" class="link-secondary">Soporte</a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="./license.html" class="link-secondary">Centro
+                                            de
+                                            ayuda</a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="https://github.com/tabler/tabler"
+                                            target="_blank" class="link-secondary" rel="noopener">Privacidad</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                                <ul class="list-inline list-inline-dots mb-0">
+                                    <li class="list-inline-item">
+                                        &copy; 2023 - Banotic todos los derechos reservados -
+                                        <a href="." class="link-secondary">Desarrollado por Devits</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </footer>
+                </footer>
+            </div>
         </div>
-    </div>
 
-    <!-- Libs JS -->
-    <!-- Tabler Core -->
-    <script src="../dist/js/tabler.min.js?1674944402" defer></script>
-    <script src="../dist/js/demo.min.js?1674944402" defer></script>
-    <script src="../dist/js/chart.js" defer></script>
+        <!-- Libs JS -->
+        <!-- Tabler Core -->
+        <script src="../dist/js/tabler.min.js?1674944402" defer></script>
+        <script src="../dist/js/demo.min.js?1674944402" defer></script>
+        <script src="../dist/js/chart.js" defer></script>
+        <!-- ChartS -->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-    <!-- ChartS -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-    <!-- CHART COURSES BY MONTH -->
-    <script>
-        var options = {
-            series: [{
-                name: "sales",
-                data: [{
-                    x: '2019/01/01',
-                    y: 400
+
+
+        <script>
+            var options = {
+                chart: {
+                    type: "line",
+                    fontFamily: 'inherit',
+                    height: 240,
+                    parentHeightOffset: 0,
+                    toolbar: {
+                        show: false,
+                    },
+                    animations: {
+                        enabled: false
+                    },
+                },
+                fill: {
+                    opacity: 1,
+                },
+                stroke: {
+                    width: 2,
+                    lineCap: "round",
+                    curve: "straight",
+                },
+                series: [{
+                    name: "Session Duration",
+                    data: [117, 92, 94, 98, 75, 110, 69, 80, 109, 113, 115, 95]
                 }, {
-                    x: '2019/04/01',
-                    y: 430
+                    name: "Page Views",
+                    data: [59, 80, 61, 66, 70, 84, 87, 64, 94, 56, 55, 67]
                 }, {
-                    x: '2019/07/01',
-                    y: 448
-                }, {
-                    x: '2019/10/01',
-                    y: 470
-                }, {
-                    x: '2020/01/01',
-                    y: 540
-                }, {
-                    x: '2020/04/01',
-                    y: 580
-                }, {
-                    x: '2020/07/01',
-                    y: 690
-                }, {
-                    x: '2020/10/01',
-                    y: 690
-                }]
-            }],
-            chart: {
-                type: 'bar',
-                height: 380
-            },
-            xaxis: {
-                type: 'category',
-                // labels: {
-                //     formatter: function (val) {
-                //         return "Q" + dayjs(val).quarter()
+                    name: "Total Visits",
+                    data: [53, 51, 52, 41, 46, 60, 45, 43, 30, 50, 58, 59]
+                }],
+                tooltip: {
+                    theme: 'dark'
+                },
+                grid: {
+                    padding: {
+                        top: -20,
+                        right: 0,
+                        left: -4,
+                        bottom: -4
+                    },
+                    strokeDashArray: 4,
+                },
+                xaxis: {
+                    labels: {
+                        padding: 0,
+                    },
+                    tooltip: {
+                        enabled: false
+                    },
+                    type: 'datetime',
+                },
+                yaxis: {
+                    labels: {
+                        padding: 4
+                    },
+                },
+                labels: [
+                    '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02'
+                ],
+                colors: ['#eee'],
+                legend: {
+                    show: true,
+                    position: 'bottom',
+                    offsetY: 12,
+                    markers: {
+                        width: 10,
+                        height: 10,
+                        radius: 100,
+                    },
+                    itemMargin: {
+                        horizontal: 8,
+                        vertical: 8
+                    },
+                },
+            }
+
+
+            var chart = new ApexCharts(document.querySelector("#chart-demo-line"), options);
+            chart.render();
+        </script>
+
+
+
+
+
+
+
+        <!-- CHART COURSES BY MONTH -->
+        <script>
+            var options = {
+                series: [{
+                    name: "sales",
+                    data: [{
+                        x: '2019/01/01',
+                        y: 400
+                    }, {
+                        x: '2019/04/01',
+                        y: 430
+                    }, {
+                        x: '2019/07/01',
+                        y: 448
+                    }, {
+                        x: '2019/10/01',
+                        y: 470
+                    }, {
+                        x: '2020/01/01',
+                        y: 540
+                    }, {
+                        x: '2020/04/01',
+                        y: 580
+                    }, {
+                        x: '2020/07/01',
+                        y: 690
+                    }, {
+                        x: '2020/10/01',
+                        y: 690
+                    }]
+                }],
+                chart: {
+                    type: 'bar',
+                    height: 380
+                },
+                xaxis: {
+                    type: 'category',
+                    // labels: {
+                    //     formatter: function (val) {
+                    //         return "Q" + dayjs(val).quarter()
+                    //     }
+                    // },
+                    group: {
+                        style: {
+                            fontSize: '10px',
+                            fontWeight: 700
+                        },
+                        groups: [
+                            { title: '2019', cols: 4 },
+                            { title: '2020', cols: 4 }
+                        ]
+                    }
+                },
+                title: {
+                    text: 'Grouped Labels on the X-axis',
+                },
+                // tooltip: {
+                //     x: {
+                //         formatter: function (val) {
+                //             return "Q" + dayjs(val).quarter() + " " + dayjs(val).format("YYYY")
+                //         }
                 //     }
                 // },
-                group: {
-                    style: {
-                        fontSize: '10px',
-                        fontWeight: 700
-                    },
-                    groups: [
-                        { title: '2019', cols: 4 },
-                        { title: '2020', cols: 4 }
-                    ]
-                }
-            },
-            title: {
-                text: 'Grouped Labels on the X-axis',
-            },
-            // tooltip: {
-            //     x: {
-            //         formatter: function (val) {
-            //             return "Q" + dayjs(val).quarter() + " " + dayjs(val).format("YYYY")
-            //         }
-            //     }
-            // },
-        };
+            };
 
-        var chart = new ApexCharts(document.querySelector("#chart5"), options);
-        chart.render();
-    </script>
+            var chart = new ApexCharts(document.querySelector("#chart5"), options);
+            chart.render();
+        </script>
 </body>
 
 </html>
