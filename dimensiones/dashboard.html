@@ -448,7 +448,10 @@
                                 <div class="input-icon">
                                     <span class="input-icon-addon">
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-building" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path d="M3 21l18 0"></path>
                                             <path d="M9 8l1 0"></path>
@@ -458,7 +461,7 @@
                                             <path d="M14 12l1 0"></path>
                                             <path d="M14 16l1 0"></path>
                                             <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
-                                         </svg>
+                                        </svg>
                                     </span>
                                     <input type="text" value="" class="form-control"
                                         placeholder="Buscar nombre de empresa..." aria-label="Search in website">
@@ -490,128 +493,145 @@
                 <div class="container-xl">
                     <!-- Content here -->
 
-                    <!-- OTECS SECTION -->
                     <div class="row row-cards">
-
-                        <div class="card mt-3">
-                            <div class="card-header justify-content-between">
-                                <h2 class="mb-0">OTECS</h2>
-                            </div>
-                            <div class="card-body d-flex gap-3 align-items-center">
-                                <strong>Buscar</strong>
-                                <!-- COMPANY-INPUT -->
-                                <div class="w-25">
-                                    <div class="input-icon">
-                                        <span class="input-icon-addon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M3 21l18 0"></path>
-                                                <path d="M9 8l1 0"></path>
-                                                <path d="M9 12l1 0"></path>
-                                                <path d="M9 16l1 0"></path>
-                                                <path d="M14 8l1 0"></path>
-                                                <path d="M14 12l1 0"></path>
-                                                <path d="M14 16l1 0"></path>
-                                                <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
-                                             </svg>
-                                        </span>
-                                        <input type="text" value="" class="h-25 form-control form-control-sm form-control-rounded"
-                                            placeholder="Nombre o RUT...">
+                        <!-- OTECS SECTION -->
+                        <div class="col-md-8 col-lg-8">
+                            <div class="card mt-3">
+                                <div class="card-header justify-content-between">
+                                    <h2 class="mb-0">OTECS</h2>
+                                </div>
+                                <div class="card-body d-flex gap-3 align-items-center">
+                                    <strong>Buscar</strong>
+                                    <!-- COMPANY-INPUT -->
+                                    <div class="w-25">
+                                        <div class="input-icon">
+                                            <span class="input-icon-addon">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-building" width="24" height="24"
+                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M3 21l18 0"></path>
+                                                    <path d="M9 8l1 0"></path>
+                                                    <path d="M9 12l1 0"></path>
+                                                    <path d="M9 16l1 0"></path>
+                                                    <path d="M14 8l1 0"></path>
+                                                    <path d="M14 12l1 0"></path>
+                                                    <path d="M14 16l1 0"></path>
+                                                    <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
+                                                </svg>
+                                            </span>
+                                            <input type="text" value=""
+                                                class="h-25 form-control form-control-sm form-control-rounded"
+                                                placeholder="Nombre o RUT...">
+                                        </div>
                                     </div>
                                 </div>
+
+
+                                <div class="table-responsive">
+                                    <table class="table table-vcenter card-table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Nombre</th>
+                                                <th>Rut</th>
+                                                <th>Estado del curso</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="cursor-pointer">
+                                                <td>1</td>
+                                                <td>OTEC N1 Lorem ipsum, dolor sit amet consectetur </td>
+                                                <td class="text-muted">
+                                                    33333333-3
+                                                </td>
+                                                <td class="text-muted">
+                                                    <span class="badge bg-green">Liquidado</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer">
+                                                <td>2</td>
+                                                <td>OTEC N2</td>
+                                                <td class="text-muted">
+                                                    33333333-3
+                                                </td>
+                                                <td class="text-muted">
+                                                    <span class="badge bg-green">Liquidado</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer">
+                                                <td>3</td>
+                                                <td>OTEC N3</td>
+                                                <td class="text-muted">
+                                                    22222222-3
+                                                </td>
+                                                <td class="text-muted">
+                                                    <span class="badge bg-green">Liquidado</span>
+                                                </td>
+                                            </tr>
+                                            <tr class="cursor-pointer">
+                                                <td>4</td>
+                                                <td>OTEC N3</td>
+                                                <td class="text-muted">
+                                                    44444444-3
+                                                </td>
+                                                <td class="text-muted">
+                                                    <span class="badge bg-orange">Pendiente</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- PAGINATION -->
+                                <div class="container">
+                                    <ul class="pagination mt-3 justify-content-center">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M15 6l-6 6l6 6"></path>
+                                                </svg>
+                                                prev
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">
+                                                next
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M9 6l6 6l-6 6"></path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
                             </div>
+                        </div>
 
-
-                            <div class="table-responsive">
-                                <table class="table table-vcenter card-table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Nombre</th>
-                                            <th>Rut</th>
-                                            <th>Estado del curso</th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="cursor-pointer">
-                                            <td>1</td>
-                                            <td>OTEC N1</td>
-                                            <td class="text-muted">
-                                                33333333-3
-                                            </td>
-                                            <td class="text-muted">
-                                                <span class="badge bg-green">Liquidado</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="cursor-pointer">
-                                            <td>2</td>
-                                            <td>OTEC N2</td>
-                                            <td class="text-muted">
-                                                33333333-3
-                                            </td>
-                                            <td class="text-muted">
-                                                <span class="badge bg-green">Liquidado</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="cursor-pointer">
-                                            <td>3</td>
-                                            <td>OTEC N3</td>
-                                            <td class="text-muted">
-                                                22222222-3
-                                            </td>
-                                            <td class="text-muted">
-                                                <span class="badge bg-green">Liquidado</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="cursor-pointer">
-                                            <td>4</td>
-                                            <td>OTEC N3</td>
-                                            <td class="text-muted">
-                                                44444444-3
-                                            </td>
-                                            <td class="text-muted">
-                                                <span class="badge bg-orange">Pendiente</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- PAGINATION -->
-                            <div class="container">
-                                <ul class="pagination mt-3 justify-content-center">
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
-                                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                                stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M15 6l-6 6l6 6"></path>
-                                            </svg>
-                                            prev
-                                        </a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">
-                                            next
-
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
-                                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                                stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                <path d="M9 6l6 6l-6 6"></path>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </div>
+                        <!-- CHART BY GEN -->
+                        <div class="col-md-4 col-lg-4 text-center mt-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h2>Generaciones capacitadas</h2>
+                                        <div id="chart7" style="min-height: 365px;"></div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
 
@@ -628,27 +648,27 @@
                     </div>
 
 
-                    <div class="row row-cards mt-3 text-center">
+                    <!-- <div class="row row-cards mt-3 text-center"> -->
                         <!-- CHART BY CAPACITY -->
-                        <div class="col-md-6 cod-lg-6">
+                        <!-- <div class="col-md-6 cod-lg-6">
                             <div class="card">
                                 <div class="card-body">
                                     <h2>Generaciones capacitadas</h2>
                                     <div id="chart6" style="min-height: 365px;"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- CHART BY AGE -->
-                        <div class="col-md-6 cod-lg-6">
+                        <!-- <div class="col-md-6 cod-lg-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h2>Tendencia de edades</h2>
+                                    <h2>Generaciones capacitadas</h2>
                                     <div id="chart7" style="min-height: 365px;"></div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
                 </div>
             </div>
 
@@ -692,130 +712,86 @@
 
     <!-- CHART COURSES BY MONTH  5-->
     <script>
+
         var options = {
-            series: [{
-                name: "Cursos",
-                data: [{
-                    x: 'OTEC 1',
-                    y: 12
-                }, {
-                    x: 'OTEC 2',
-                    y: 11
-                }, {
-                    x: 'OTEC 3',
-                    y: 6
-                }, {
-                    x: 'OTEC 4',
-                    y: 23
-                }, {
-                    x: 'OTEC 5',
-                    y: 14
-                }, {
-                    x: 'OTEC 6',
-                    y: 12
-                }, {
-                    x: 'OTEC 7',
-                    y: 7
-                },
-                {
-                    x: 'OTEC 9',
-                    y: 5
-                },
-                {
-                    x: 'OTEC 10',
-                    y: 7
-                },
-                {
-                    x: 'OTEC 11',
-                    y: 5
-                },
-                {
-                    x: 'OTEC 12',
-                    y: 6
-                },
-                {
-                    x: 'OTEC 13',
-                    y: 4
-                },
-                {
-                    x: 'OTEC 14',
-                    y: 7
-                },
-                {
-                    x: 'OTEC 15',
-                    y: 8
-                },
-                {
-                    x: 'OTEC 16',
-                    y: 8
-                },
-                {
-                    x: 'OTEC 17',
-                    y: 8
-                },
-                {
-                    x: 'OTEC 18',
-                    y: 8
-                },
-                {
-                    x: 'OTEC 19',
-                    y: 8
-                },
-                {
-                    x: 'OTEC 20',
-                    y: 8
-                },
-                {
-                    x: 'OTEC 21',
-                    y: 8
-                },
-                ]
-            }],
             chart: {
-                type: 'bar',
-                height: 380
+                type: "line",
+                fontFamily: 'inherit',
+                height: 400,
+                parentHeightOffset: 0,
+                toolbar: {
+                    show: false,
+                },
+                animations: {
+                    enabled: true
+                },
             },
-            colors: ['#206bc4'],
+            fill: {
+                opacity: 1,
+            },
+            stroke: {
+                width: 2,
+                lineCap: "round",
+                curve: "straight",
+            },
+            series: [{
+                name: "OTEC 1",
+                data: [1, 2, 0, 0, 2, 2, 1, 3, 3, 0, 1, 1]
+            }, {
+                name: "OTEC 2",
+                data: [1, 0, 1, 3, 0, 4, 1, 0, 1, 2, 2, 3]
+            }, {
+                name: "OTEC 3",
+                data: [3, 1, 2, 1, 0, 0, 2, 3, 0, 0, 0, 1]
+            }, {
+                name: "OTEC 1 lorem impsun dolor met ",
+                data: [2, 3, 1, 0, 0, 0, 1, 2, 3, 1, 0, 0]
+            },],
+            tooltip: {
+                theme: 'dark'
+            },
+            grid: {
+                padding: {
+                    top: -20,
+                    right: 0,
+                    left: -4,
+                    bottom: -4
+                },
+                strokeDashArray: 4,
+            },
             xaxis: {
-                type: 'category',
-                // labels: {
-                //     formatter: function (val) {
-                //         return "Q" + dayjs(val).quarter()
-                //     }
-                // },
-                group: {
-                    style: {
-                        fontSize: '10px',
-                        fontWeight: 700
-                    },
-                    groups: [
-                        { title: 'Jan', cols: 3 },
-                        { title: 'Feb', cols: 2 },
-                        { title: 'Mar', cols: 3 },
-                        { title: 'Apr', cols: 1 },
-                        { title: 'May', cols: 2 },
-                        { title: 'Jun', cols: 2 },
-                        { title: 'Jul', cols: 1 },
-                        { title: 'Aug', cols: 2 },
-                        { title: 'Sep', cols: 1 },
-                        { title: 'Oct', cols: 2 },
-                        { title: 'Nov', cols: 1 },
-                        { title: 'Dic', cols: 2 }
-                    ]
-                    // 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'
-                }
+                labels: {
+                    padding: 0,
+                },
+                tooltip: {
+                    enabled: false
+                },
+                type: 'datetime',
             },
-            // title: {
-            //     text: 'Cursos OTEC por mes',
-            // }
-            // tooltip: {
-            //     x: {
-            //         formatter: function (val) {
-            //             return "Q" + dayjs(val).quarter() + " " + dayjs(val).format("YYYY")
-            //         }
-            //     }
-            // },
-        };
+            yaxis: {
+                labels: {
+                    padding: 4
+                },
+            },
+            labels: [
+                '2022-01-30', '2022-02-28', '2022-03-30', '2022-04-30', '2022-05-30', '2022-06-30', '2022-07-30', '2022-08-30', '2022-09-30', '2022-10-30', '2022-11-30', '2022-12-30'
+            ],
+            colors: ['#206bc4', '#17a2b8', '#f76707', '#ae3ec9'],
+            legend: {
+                show: true,
+                position: 'bottom',
+                offsetY: 12,
+                markers: {
+                    width: 10,
+                    height: 10,
+                    radius: 100,
+                },
+                itemMargin: {
+                    horizontal: 8,
+                    vertical: 8
+                },
+            },
+        }
 
         var chart = new ApexCharts(document.querySelector("#chart5"), options);
         chart.render();
@@ -826,10 +802,12 @@
 
         let colors = ['#fee19d',
             '#fbb29b',
-            '#f78794']
+            '#f78794',
+            '#17a2b8'
+        ]
         var options = {
             series: [{
-                data: [21, 22, 10]
+                data: [21, 22, 10, 5]
             }],
             chart: {
                 height: 350,
@@ -858,6 +836,7 @@
                     ['Z', 'GEN'],
                     ['B', 'GEN'],
                     ['M', 'GEN'],
+                    ['X', 'GEN'],
                 ],
                 labels: {
                     style: {
@@ -876,65 +855,47 @@
     <script>
 
         var options = {
-            series: [{
-                name: 'Hombres',
-                data: [20, 33, 32, 45],
-            }, {
-                name: 'Mujeres',
-                data: [20, 22, 23, 25],
-            }],
             chart: {
-                height: 350,
-                type: 'radar',
-            },
-            dataLabels: {
-                enabled: true
-            },
-            plotOptions: {
-                radar: {
-                    size: 140,
-                    polygons: {
-                        strokeColors: '#e9e9e9',
-                        fill: {
-                            colors: ['#f8f8f8', '#fff']
-                        }
-                    }
+                type: "donut",
+                fontFamily: 'inherit',
+                height: 240,
+                sparkline: {
+                    enabled: true
+                },
+                animations: {
+                    enabled: true
                 },
             },
-            // title: {
-            //   text: 'Radar with Polygon Fill'
-            // },3
-            colors: ['#206bc4', '#FF4560'],
-            markers: {
-                size: 4,
-                colors: ['#fff'],
-                strokeColor: '#FF4560',
-                strokeWidth: 2,
+            fill: {
+                opacity: 1,
+            },
+            series: [44, 55, 30, 22],
+            labels: ["GEN Z", "GEN X", 'GEN B', 'GEN M'],
+            tooltip: {
+                theme: 'dark'
+            },
+            grid: {
+                strokeDashArray: 4,
+            },
+            colors: ['#f76707', '#ae3ec9', '#17a2b8', '#f78794'],
+            legend: {
+                show: true,
+                position: 'bottom',
+                offsetY: 12,
+                markers: {
+                    width: 10,
+                    height: 10,
+                    radius: 100,
+                },
+                itemMargin: {
+                    horizontal: 8,
+                    vertical: 8
+                },
             },
             tooltip: {
-                y: {
-                    formatter: function (val) {
-                        return val
-                    }
-                }
+                fillSeriesColor: false
             },
-            xaxis: {
-                categories: ['2022', '2021', '2018', '2017']
-            },
-            yaxis: {
-                tickAmount: 7,
-                labels: {
-                    formatter: function (val, i) {
-                        if (i % 2 === 0) {
-                            return val
-                        } else {
-                            return ''
-                        }
-                    }
-                }
-            }
-        };
-
+        }
         var chart = new ApexCharts(document.querySelector("#chart7"), options);
         chart.render();
     </script>
