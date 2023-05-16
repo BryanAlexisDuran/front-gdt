@@ -502,7 +502,7 @@
                         <!-- CARD CLIENT (BANCO CHILE) -->
                         <div class="col-md-4 col-lg-4">
 
-                            <div class="card card-link card-link-pop card-stacked" data-bs-toggle="modal"
+                            <div class="card card-link card-link-pop card-stacked align-items-center" data-bs-toggle="modal"
                                 data-bs-target="#modal-scrollable-selected">
                                 <!-- YELLO STAR -->
                                 <div class="ribbon ribbon-start bg-yellow">
@@ -516,12 +516,14 @@
                                 </div>
 
                                 <!-- STATUS BAR -->
-                                <div class="card-status-start bg-yellow"></div>
-
+                                <!-- <div class="card-status-start bg-yellow"></div> -->
+                                
                                 <!-- CARD -->
-                                <div class="card-body m-auto w-100 btn btn-ghost-yellow flex-column">
+                                <div class="card-body m-auto w-100 btn outline  flex-column">
                                     <h2 class="card-title">
-                                        Empresas seleccionadas
+                                        <span class="badge badge-outline text-info p-2">
+                                            Empresas seleccionadas
+                                        </span>
                                     </h2>
                                     <span class="card-subtitle">
                                         <span class="badge badge-outline text-blue p-2">2</span>
@@ -633,20 +635,20 @@
                                                     <span class="badge bg-blue-lt ms-auto p-2">
                                                         20
                                                     </span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                                        class="icon icon-tabler icon-tabler-school" width="24"
-                                                        height="24" viewBox="0 0 24 24" stroke-width="2"
-                                                        stroke="currentColor" fill="none" stroke-linecap="round"
-                                                        stroke-linejoin="round">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-certificate" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                        <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
-                                                        <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
-                                                    </svg>
+                                                        <path d="M15 15m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                                        <path d="M13 17.5v4.5l2 -1.5l2 1.5v-4.5"></path>
+                                                        <path d="M10 19h-5a2 2 0 0 1 -2 -2v-10c0 -1.1 .9 -2 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -1 1.73"></path>
+                                                        <path d="M6 9l12 0"></path>
+                                                        <path d="M6 12l3 0"></path>
+                                                        <path d="M6 15l2 0"></path>
+                                                     </svg>
 
 
                                                 </button>
                                             </h2>
-                                            <div id="collapse-courses" class="accordion-collapse collapse"
+                                            <div id="collapse-courses" class="accordion-collapse collapse show"
                                                 data-bs-parent="#accordion-courses">
                                                 <div class="table-responsive">
                                                     <table class="table table-vcenter card-table text-center">
@@ -667,7 +669,7 @@
                                                                 <td class="w-50">
                                                                     <div class="progress progress-xs">
                                                                         <div class="progress-bar bg-primary"
-                                                                            style="width: 50%"></div>
+                                                                            style="width: 60%"></div>
                                                                     </div>
                                                                 </td>
                                                             </tr>
@@ -679,9 +681,9 @@
                                                                 <td class="w-50">
                                                                     <div class="progress progress-xs">
                                                                         <div class="progress-bar bg-primary"
-                                                                            style="width: 50%"></div>
-                                                                    </div>
-                                                                </td>
+                                                                            style="width: 25%">
+                                                                        </div>
+                                                                    </td>
                                                             </tr>
                                                             <tr>
                                                                 <td><span
@@ -715,7 +717,7 @@
                                                                 <td class="w-50">
                                                                     <div class="progress progress-xs">
                                                                         <div class="progress-bar bg-primary"
-                                                                            style="width: 50%"></div>
+                                                                            style="width: 15%"></div>
                                                                     </div>
                                                                 </td>
                                                             </tr>
