@@ -1139,6 +1139,33 @@
         <!-- CHART BY GEN AND GEN -->
         <script>
             var options = {
+                plotOptions: {
+                    pie: {
+                        donut: {
+                            labels: {
+                                show: true,
+                            },
+                        }
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                    textAnchor: 'start',
+                    dropShadow: {
+                        enabled: true,
+                        top: 1,
+                        left: 1,
+                        blur: 1,
+                        color: '#000',
+                        opacity: 0.45
+                    },
+                    // formatter: function (val) {
+                    //     return val
+                    // },
+                    style: {
+                        fontSize: '0.6rem',
+                    },
+                },
                 chart: {
                     type: "donut",
                     fontFamily: 'inherit',
@@ -1293,6 +1320,12 @@
                     bar: {
                         barHeight: '45%',
                         horizontal: true,
+                        dataLabels: {
+                            hideOverflowingLabels: true,
+                            total: {
+                                enabled: true,
+                            }
+                        }
                     }
                 },
                 dataLabels: {
@@ -1302,9 +1335,6 @@
                     opacity: 0.9,
                 },
                 series: [{
-                    name: "Total trabajadores",
-                    data: [5, 6, 7, 7]
-                }, {
                     name: "Hombres",
                     data: [2, 3, 5, 5]
                 }, {
@@ -1343,7 +1373,7 @@
                         padding: 4
                     },
                 },
-                colors: ['#0b956c', '#206bc4', '#4299e1'],
+                colors: ['#206bc4', '#4299e1'],
                 legend: {
                     show: true,
                     position: 'bottom',

@@ -1538,6 +1538,12 @@
                 bar: {
                     barHeight: '45%',
                     horizontal: false,
+                    dataLabels: {
+                            hideOverflowingLabels: true,
+                            total: {
+                                enabled: true,
+                            }
+                        }
                 }
             },
             dataLabels: {
@@ -1546,10 +1552,7 @@
             fill: {
                 opacity: 0.9,
             },
-            series: [{
-                name: "Total trabajadores",
-                data: [5, 6, 7, 7, 7, 9, 11, 7, 8, 4, 4]
-            },
+            series: [
             {
                 name: "Hombres",
                 data: [2, 3, 5, 5, 4, 5, 6, 3, 2, 2, 1]
@@ -1590,7 +1593,7 @@
                     padding: 4
                 },
             },
-            colors: ['#0b956c', '#206bc4', '#4299e1'],
+            colors: ['#206bc4', '#4299e1'],
             legend: {
                 show: true,
                 position: 'bottom',

@@ -43,7 +43,8 @@
                 <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
                     <a href="/">
                         <!-- Gestión de Talento -->
-                        <img src="../logo/logo-banotic.png" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+                        <img src="../logo/logo-banotic.png" width="110" height="32" alt="Tabler"
+                            class="navbar-brand-image">
                     </a>
                 </h1>
                 <div class="navbar-nav flex-row order-md-last">
@@ -273,7 +274,7 @@
                                         Capacitaciones
                                     </span>
                                 </a>
-                              
+
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link" href="./dashboard.html">
@@ -299,7 +300,7 @@
                                         Dimensiones
                                     </span>
                                 </a>
-                                
+
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../presupuestos.html">
@@ -566,12 +567,12 @@
 
                         <!-- CHART BY GEN -->
                         <div class="col-md-4 col-lg-4 text-center mt-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h2>Generaciones capacitadas</h2>
-                                        <div id="chart7" style="min-height: 365px;"></div>
-                                    </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2>Generaciones capacitadas</h2>
+                                    <div id="chart7" style="min-height: 365px;"></div>
                                 </div>
+                            </div>
                         </div>
                     </div>
 
@@ -589,8 +590,8 @@
 
 
                     <!-- <div class="row row-cards mt-3 text-center"> -->
-                        <!-- CHART BY CAPACITY -->
-                        <!-- <div class="col-md-6 cod-lg-6">
+                    <!-- CHART BY CAPACITY -->
+                    <!-- <div class="col-md-6 cod-lg-6">
                             <div class="card">
                                 <div class="card-body">
                                     <h2>Generaciones capacitadas</h2>
@@ -599,8 +600,8 @@
                             </div>
                         </div> -->
 
-                        <!-- CHART BY AGE -->
-                        <!-- <div class="col-md-6 cod-lg-6">
+                    <!-- CHART BY AGE -->
+                    <!-- <div class="col-md-6 cod-lg-6">
                             <div class="card">
                                 <div class="card-body">
                                     <h2>Generaciones capacitadas</h2>
@@ -654,6 +655,27 @@
     <script>
 
         var options = {
+            markers: {
+                size: 4,
+                colors: undefined,
+                strokeColors: '#fff',
+                strokeWidth: 2,
+                strokeOpacity: 0.9,
+                strokeDashArray: 0,
+                fillOpacity: 1,
+                discrete: [],
+                shape: "circle",
+                radius: 2,
+                offsetX: 0,
+                offsetY: 0,
+                onClick: undefined,
+                onDblClick: undefined,
+                showNullDataPoints: true,
+                hover: {
+                    size: undefined,
+                    sizeOffset: 3
+                }
+            },
             chart: {
                 type: "line",
                 fontFamily: 'inherit',
@@ -795,6 +817,33 @@
     <script>
 
         var options = {
+            plotOptions: {
+                pie: {
+                    donut: {
+                        labels: {
+                            show: true,
+                        },
+                    }
+                }
+            },
+            dataLabels: {
+                enabled: true,
+                textAnchor: 'start',
+                dropShadow: {
+                    enabled: true,
+                    top: 1,
+                    left: 1,
+                    blur: 1,
+                    color: '#000',
+                    opacity: 0.45
+                },
+                // formatter: function (val) {
+                //     return val
+                // },
+                style: {
+                    fontSize: '0.6rem',
+                },
+            },
             chart: {
                 type: "donut",
                 fontFamily: 'inherit',
