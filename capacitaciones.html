@@ -43,7 +43,8 @@
                 <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
                     <a href="/">
                         <!-- Gestión de Talento -->
-                        <img src="./logo/logo-banotic.png" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+                        <img src="./logo/logo-banotic.png" width="110" height="32" alt="Tabler"
+                            class="navbar-brand-image">
                     </a>
                 </h1>
                 <div class="navbar-nav flex-row order-md-last">
@@ -297,7 +298,7 @@
                                         Dimensiones
                                     </span>
                                 </a>
-                                
+
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../presupuestos.html">
@@ -434,11 +435,11 @@
                     <div class="row row-cards align-items-center">
 
                         <!-- CHART HOURS BY GEN -->
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-md-6 col-lg-6   ">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
-                                        <div class="subheader">Horas capacitaciones por género</div>
+                                        <div class="subheader">Total horas capacitaciones por género</div>
                                         <div class="ms-auto lh-1">
                                             <div class="dropdown">
                                                 <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
@@ -476,9 +477,9 @@
                                     </div>
 
                                     <div class="progress progress-sm">
-                                        <div class="progress-bar bg-azure progress-bar-striped progress-bar-animated" style="width: 51%" role="progressbar"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                            aria-label="75% Complete">
+                                        <div class="progress-bar bg-azure progress-bar-striped progress-bar-animated"
+                                            style="width: 51%" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100" aria-label="75% Complete">
                                             <!-- <span class="visually-hidden">75% Complete</span> -->
                                         </div>
                                     </div>
@@ -507,9 +508,9 @@
                                     </div>
 
                                     <div class="progress progress-sm">
-                                        <div class="progress-bar bg-blue progress-bar-striped progress-bar-animated" style="width: 49%" role="progressbar"
-                                            aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"
-                                            aria-label="49% Complete">
+                                        <div class="progress-bar bg-blue progress-bar-striped progress-bar-animated"
+                                            style="width: 49%" role="progressbar" aria-valuenow="49" aria-valuemin="0"
+                                            aria-valuemax="100" aria-label="49% Complete">
                                             <!-- <span class="visually-hidden">75% Complete</span> -->
                                         </div>
                                     </div>
@@ -518,11 +519,11 @@
                         </div>
 
                         <!-- CHART AVERAGE HOUR BY SEX -->
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-md-6 col-lg-6   ">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center">
-                                        <div class="subheader">Horas en promedio por trabajador</div>
+                                        <div class="subheader">Total horas en promedio por trabajador</div>
                                         <div class="ms-auto lh-1">
                                             <div class="dropdown">
                                                 <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
@@ -562,9 +563,9 @@
                                     </div>
 
                                     <div class="progress progress-sm">
-                                        <div class="progress-bar bg-azure progress-bar-striped progress-bar-animated" style="width: 62%" role="progressbar"
-                                            aria-valuenow="51" aria-valuemin="0" aria-valuemax="100"
-                                            aria-label="75% Complete">
+                                        <div class="progress-bar bg-azure progress-bar-striped progress-bar-animated"
+                                            style="width: 62%" role="progressbar" aria-valuenow="51" aria-valuemin="0"
+                                            aria-valuemax="100" aria-label="75% Complete">
                                             <!-- <span class="visually-hidden">75% Complete</span> -->
                                         </div>
                                     </div>
@@ -596,16 +597,15 @@
                                     </div>
 
                                     <div class="progress progress-sm">
-                                        <div class="progress-bar bg-blue progress-bar-striped progress-bar-animated" style="width: 54%" role="progressbar"
-                                            aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"
-                                            aria-label="75% Complete">
+                                        <div class="progress-bar bg-blue progress-bar-striped progress-bar-animated"
+                                            style="width: 54%" role="progressbar" aria-valuenow="49" aria-valuemin="0"
+                                            aria-valuemax="100" aria-label="75% Complete">
                                             <!-- <span class="visually-hidden">75% Complete</span> -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
 
                     </div>
 
@@ -624,17 +624,6 @@
 
                     <div class="row row-cards">
 
-                        <!-- CHART BY GEN AND GEN -->
-                        <div class="col-md-4 col-lg-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h2>Trabajadores inscritos por género y generación</h2>
-                                    <div id="chart" class="w-100"></div>
-                                </div>
-                            </div>
-                        </div>
-
-
                         <!-- CHART BY DIVISION -->
                         <div class="col-md-8 col-lg-8">
                             <div class="card">
@@ -644,8 +633,468 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- CHART BY GEN AND GEN -->
+                        <div class="col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2>Trabajadores inscritos por género y generación</h2>
+                                    <div id="chart" class="w-100"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <!-- UNIVERSO -->
+                    <div class="row g-2 mt-4 align-items-center">
+                        <div class="col">
+                            <h2 class="page-title">
+                                Universo
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!-- Accordion -->
+                    <div class="row row-cards">
+                        <div class="col-12 ">
+                            <div class="card mt-3 ">
+                                <div class="card-header">
+
+                                    <div class="card-title">
+                                        <h2>Capacitaciones para el periodo actual</h2>
+                                    </div>
+                                </div>
+                                <div class="card-body ">
+                                    <div class="accordion " id="accordion-courses">
+
+                                        <!-- ACCORDION ITEMS -->
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading-courses">
+                                                <button class="accordion-button gap-3" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse-courses"
+                                                    aria-expanded="true">
+                                                    <div class="container w-100 d-flex justify-content-around">
+
+
+                                                        <strong class="text-cyan w-25">INVERSIONES Y AHORRO</strong>
+                                                        <strong class="text-green">Aprobado</strong>
+                                                        <strong class="text-cyan">E-Learning</strong>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse-courses" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordion-courses">
+                                                <div class="table-responsive">
+                                                    <table class="table table-vcenter card-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">RUT Proveedor
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">33333333-3</span>
+                                                                </td>
+
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Nombre Proveedor
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">Proveedor 1</span>
+                                                                </td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Nro
+                                                                        De horas </span>
+                                                                </td>
+                                                                <td><span class="badge bg-azure ms-2">60</span></td>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Fecha inicio
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">2022-04-12</span>
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Valor por
+                                                                        participante (costo empresa) </span>
+                                                                </td>
+                                                                <td><span class="badge bg-azure ms-2">$ 6777</span></td>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Fecha término
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">2022-07-12</span>
+                                                                </td>
+
+                                                            </tr>
+
+
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading-courses1">
+                                                <button class="accordion-button gap-3" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse-courses1"
+                                                    aria-expanded="true">
+                                                    <div class="container w-100 d-flex justify-content-around">
+
+
+                                                        <strong class="text-cyan w-25">ADMINISTRACION DE
+                                                            NEGOCIOS</strong>
+                                                        <strong class="text-green">Aprobado</strong>
+                                                        <strong class="text-cyan">E-Learning</strong>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse-courses1" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordion-courses1">
+                                                <div class="table-responsive">
+                                                    <table class="table table-vcenter card-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">RUT Proveedor
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">33333333-3</span>
+                                                                </td>
+
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Nombre Proveedor
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">Proveedor 1</span>
+                                                                </td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Nro
+                                                                        De horas </span>
+                                                                </td>
+                                                                <td><span class="badge bg-azure ms-2">60</span></td>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Fecha inicio
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">2022-04-12</span>
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Valor por
+                                                                        participante (costo empresa) </span>
+                                                                </td>
+                                                                <td><span class="badge bg-azure ms-2">$ 6777</span></td>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Fecha término
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">2022-07-12</span>
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading-courses2">
+                                                <button class="accordion-button gap-3" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse-courses2"
+                                                    aria-expanded="true">
+                                                    <div class="container w-100 d-flex justify-content-around">
+
+
+                                                        <strong class="text-cyan w-25">ADMINISTRACION DE
+                                                            NEGOCIOS</strong>
+                                                        <strong class="text-green">Aprobado</strong>
+                                                        <strong class="text-cyan">E-Learning</strong>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse-courses2" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordion-courses2">
+                                                <div class="table-responsive">
+                                                    <table class="table table-vcenter card-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">RUT Proveedor
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">33333333-3</span>
+                                                                </td>
+
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Nombre Proveedor
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">Proveedor 1</span>
+                                                                </td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Nro
+                                                                        De horas </span>
+                                                                </td>
+                                                                <td><span class="badge bg-azure ms-2">60</span></td>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Fecha inicio
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">2022-04-12</span>
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Valor por
+                                                                        participante (costo empresa) </span>
+                                                                </td>
+                                                                <td><span class="badge bg-azure ms-2">$ 6777</span></td>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Fecha término
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">2022-07-12</span>
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading-courses3">
+                                                <button class="accordion-button gap-3" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse-courses3"
+                                                    aria-expanded="true">
+                                                    <div class="container w-100 d-flex justify-content-around">
+
+
+                                                        <strong class="text-cyan w-25">ADMINISTRACION DE
+                                                            NEGOCIOS</strong>
+                                                        <strong class="text-green">Aprobado</strong>
+                                                        <strong class="text-cyan">E-Learning</strong>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse-courses3" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordion-courses3">
+                                                <div class="table-responsive">
+                                                    <table class="table table-vcenter card-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">RUT Proveedor
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">33333333-3</span>
+                                                                </td>
+
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Nombre Proveedor
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">Proveedor 1</span>
+                                                                </td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Nro
+                                                                        De horas </span>
+                                                                </td>
+                                                                <td><span class="badge bg-azure ms-2">60</span></td>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Fecha inicio
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">2022-04-12</span>
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Valor por
+                                                                        participante (costo empresa) </span>
+                                                                </td>
+                                                                <td><span class="badge bg-azure ms-2">$ 6777</span></td>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Fecha término
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">2022-07-12</span>
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading-courses4">
+                                                <button class="accordion-button gap-3" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse-courses4"
+                                                    aria-expanded="true">
+                                                    <div class="container w-100 d-flex justify-content-around">
+
+
+                                                        <strong class="text-cyan w-25">ADMINISTRACION DE
+                                                            NEGOCIOS</strong>
+                                                        <strong class="text-green">Aprobado</strong>
+                                                        <strong class="text-cyan">E-Learning</strong>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse-courses4" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordion-courses4">
+                                                <div class="table-responsive">
+                                                    <table class="table table-vcenter card-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                                <th></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">RUT Proveedor
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">33333333-3</span>
+                                                                </td>
+
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Nombre Proveedor
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">Proveedor 1</span>
+                                                                </td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Nro
+                                                                        De horas </span>
+                                                                </td>
+                                                                <td><span class="badge bg-azure ms-2">60</span></td>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Fecha inicio
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">2022-04-12</span>
+                                                                </td>
+
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Valor por
+                                                                        participante (costo empresa) </span>
+                                                                </td>
+                                                                <td><span class="badge bg-azure ms-2">$ 6777</span></td>
+                                                                <td class="w-25">
+                                                                    <span class="p-2 w-100">Fecha término
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge bg-azure ms-2">2022-07-12</span>
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
                 </div>
                 <!-- FOOTER -->
                 <footer class="footer footer-transparent d-print-none m-auto">
@@ -698,7 +1147,7 @@
                         enabled: true
                     },
                     animations: {
-                        enabled: false
+                        enabled: true
                     },
                 },
                 fill: {
@@ -748,7 +1197,7 @@
                         show: false,
                     },
                     animations: {
-                        enabled: false
+                        enabled: true
                     },
                 },
                 dataLabels: {
@@ -830,7 +1279,7 @@
                 chart: {
                     type: "bar",
                     fontFamily: 'inherit',
-                    // height: 240,
+                    height: 230,
                     parentHeightOffset: 0,
                     toolbar: {
                         show: false,
@@ -843,7 +1292,7 @@
                 plotOptions: {
                     bar: {
                         barHeight: '45%',
-                        horizontal: false,
+                        horizontal: true,
                     }
                 },
                 dataLabels: {
@@ -854,13 +1303,13 @@
                 },
                 series: [{
                     name: "Total trabajadores",
-                    data: [5, 6, 7, 7, 7, 9, 11, 7, 8, 4, 4]
+                    data: [5, 6, 7, 7]
                 }, {
                     name: "Hombres",
-                    data: [2, 3, 5, 5, 4, 5, 6, 3, 2, 2, 1]
+                    data: [2, 3, 5, 5]
                 }, {
                     name: "Mujeres",
-                    data: [3, 3, 2, 2, 3, 4, 5, 4, 6, 2, 3]
+                    data: [3, 3, 2, 2]
                 }],
                 tooltip: {
                     theme: 'dark'
@@ -887,14 +1336,14 @@
                     axisBorder: {
                         show: false,
                     },
-                    categories: ['21', '22', '24', '25', '28', '33', '32', '35', '37', '44', '42'],
+                    categories: ['TRAB. CALIFICADO', 'TRAB. NO CALIFICADO', 'TRAB. ADMINISTRATIVOS', 'TRAB. CALIFICADO'],
                 },
                 yaxis: {
                     labels: {
                         padding: 4
                     },
                 },
-                colors: ['#0b956c','#206bc4', '#4299e1'],
+                colors: ['#0b956c', '#206bc4', '#4299e1'],
                 legend: {
                     show: true,
                     position: 'bottom',
