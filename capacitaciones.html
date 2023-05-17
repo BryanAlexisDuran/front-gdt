@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TEMPLATE -->
     <!-- CSS files -->
-    <link href="./dist/css/tabler.min.css?1674944402" rel="stylesheet" />
-    <link href="./dist/css/tabler-flags.min.css?1674944402" rel="stylesheet" />
-    <link href="./dist/css/tabler-payments.min.css?1674944402" rel="stylesheet" />
-    <link href="./dist/css/tabler-vendors.min.css?1674944402" rel="stylesheet" />
-    <link href="./dist/css/demo.min.css?1674944402" rel="stylesheet" />
-    <!-- <link href="./dist/css/chart.css" rel="stylesheet" /> -->
+    <link href="../dist/css/tabler.min.css?1674944402" rel="stylesheet" />
+    <link href="../dist/css/tabler-flags.min.css?1674944402" rel="stylesheet" />
+    <link href="../dist/css/tabler-payments.min.css?1674944402" rel="stylesheet" />
+    <link href="../dist/css/tabler-vendors.min.css?1674944402" rel="stylesheet" />
+    <link href="../dist/css/demo.min.css?1674944402" rel="stylesheet" />
+    <link href="../dist/css/chart.css" rel="stylesheet" />
     <!-- chart -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <style>
@@ -26,11 +26,11 @@
             font-feature-settings: "cv03", "cv04", "cv11";
         }
     </style>
-    <title>Presupuestos</title>
+    <title>Reportes</title>
 </head>
 
 <body>
-    <script src="./dist/js/demo-theme.min.js?1674944402"></script>
+    <script src="../dist/js/demo-theme.min.js?1674944402"></script>
 
     <!-- Navbar -->
     <div class="mb-3">
@@ -235,7 +235,7 @@
                     <div class="container-xl">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html">
+                                <a class="nav-link" href="../index.html">
                                     <span>
 
                                         <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
@@ -251,7 +251,7 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="nav-item ">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="./capacitaciones.html">
                                     <span>
 
@@ -274,7 +274,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./dimensiones/dashboard.html">
+                                <a class="nav-link" href="../dimensiones/dashboard.html">
                                     <span>
 
                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -299,8 +299,8 @@
                                 </a>
                                 
                             </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="./presupuestos.html">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../presupuestos.html">
                                     <span>
 
                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -347,7 +347,7 @@
                                     </span>
                                 </a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item justify-content-between" href="./resultados/reportes.html">
+                                    <a class="dropdown-item justify-content-between" href="../resultados/reportes.html">
                                         Reportes
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-file-report" width="24" height="24"
@@ -361,7 +361,7 @@
                                             </path>
                                         </svg>
                                     </a>
-                                    <a class="dropdown-item justify-content-between" href="./resultados/demo.html">
+                                    <a class="dropdown-item justify-content-between" href="../resultados/demo.html">
                                         Demo
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-chart-arrows" width="24" height="24"
@@ -386,7 +386,10 @@
                                 <div class="input-icon">
                                     <span class="input-icon-addon">
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-building" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path d="M3 21l18 0"></path>
                                             <path d="M9 8l1 0"></path>
@@ -396,7 +399,7 @@
                                             <path d="M14 12l1 0"></path>
                                             <path d="M14 16l1 0"></path>
                                             <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
-                                         </svg>
+                                        </svg>
                                     </span>
                                     <input type="text" value="" class="form-control"
                                         placeholder="Buscar nombre de empresa..." aria-label="Search in website">
@@ -409,7 +412,6 @@
         </header>
     </div>
 
-
     <div class="page">
         <div class="page-wrapper">
             <!-- Page header -->
@@ -418,7 +420,7 @@
                     <div class="row g-2 align-items-center">
                         <div class="col">
                             <h2 class="page-title">
-                                Presupuestos
+                                Reportes
                             </h2>
                         </div>
                     </div>
@@ -429,381 +431,489 @@
                 <div class="container-xl">
                     <!-- Content here -->
 
-                    <!-- OTECS SECTION -->
-                    <div class="card mt-3">
-                        <div class="card-header justify-content-between">
-                            <h2 class="mb-0">OTECS</h2>
-                        </div>
-                        <div class="card-body d-flex gap-3 align-items-center">
-                            <strong>Buscar</strong>
-                            <!-- COMPANY-INPUT -->
-                            <div class="w-25">
-                                <div class="input-icon">
-                                    <span class="input-icon-addon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M3 21l18 0"></path>
-                                            <path d="M9 8l1 0"></path>
-                                            <path d="M9 12l1 0"></path>
-                                            <path d="M9 16l1 0"></path>
-                                            <path d="M14 8l1 0"></path>
-                                            <path d="M14 12l1 0"></path>
-                                            <path d="M14 16l1 0"></path>
-                                            <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
-                                         </svg>
-                                    </span>
-                                    <input type="text" value="" class="h-25 form-control form-control-sm form-control-rounded" placeholder="Nombre o RUT...">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row row-cards align-items-center">
 
-
-                        <div class="table-responsive">
-                            <table class="table table-vcenter card-table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Nombre</th>
-                                        <th>Rut</th>
-                                        <th>Cant.Cursos</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="cursor-pointer">
-                                        <td>1</td>
-                                        <td>OTEC N1</td>
-                                        <td class="text-muted">
-                                            33333333-3
-                                        </td>
-                                        <td class="text-muted">
-                                            5
-                                        </td>
-                                    </tr>
-                                    <tr class="cursor-pointer">
-                                        <td>2</td>
-                                        <td>OTEC N2</td>
-                                        <td class="text-muted">
-                                            33333333-3
-                                        </td>
-                                        <td class="text-muted">
-                                            4
-                                        </td>
-                                    </tr>
-                                    <tr class="cursor-pointer">
-                                        <td>3</td>
-                                        <td>OTEC N3</td>
-                                        <td class="text-muted">
-                                            22222222-3
-                                        </td>
-                                        <td class="text-muted">
-                                            5
-                                        </td>
-                                    </tr>
-                                    <tr class="cursor-pointer">
-                                        <td>4</td>
-                                        <td>OTEC N3</td>
-                                        <td class="text-muted">
-                                            44444444-3
-                                        </td>
-                                        <td class="text-muted">
-                                            4
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- PAGINATION -->
-                        <div class="container">
-                            <ul class="pagination mt-3 justify-content-center">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M15 6l-6 6l6 6"></path>
-                                        </svg>
-                                        prev
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">
-                                        next
-
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M9 6l6 6l-6 6"></path>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <!-- CURSOS NOMBRE OTEC -->
-                    <div class="row row-cards">
+                        <!-- CHART HOURS BY GEN -->
                         <div class="col-md-6 col-lg-6">
-
-                            <div class="card mt-3">
-                                <div class="card-header justify-content-between">
-                                    <h2 class="mb-0">Cursos de Nombre Otec</h2>
-                                </div>
+                            <div class="card">
                                 <div class="card-body">
-                                    <!-- COMPANY-INPUT -->
-                                    <div class="w-50 d-flex gap-3 align-items-center">
-                                        <strong>Buscar</strong>
-                                        <div class="input-icon">
-                                            <span class="input-icon-addon">
-
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
-                                                    <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
-                                                 </svg>
-                                                 
-                                            </span>
-                                            <input type="text" value="" class="form-control form-control-sm form-control-rounded"
-                                                placeholder="Nombre o código...">
+                                    <div class="d-flex align-items-center">
+                                        <div class="subheader">Horas capacitaciones por género</div>
+                                        <div class="ms-auto lh-1">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">Año 2022</a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <!-- <a class="dropdown-item active" href="#">Año 2022</a>   -->
+                                                    <a class="dropdown-item" href="#">Año 2019</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="h1 mb-3 mt-2">99</div>
+                                    <div class="d-flex mb-2">
 
-                                <div class="table-responsive">
-                                    <table class="table table-vcenter card-table">
-                                        <thead>
-                                            <tr>
-                                                <th><span class="bagde bg-green ms-auto"></span></th>
-                                                <th>Código</th>
-                                                <th>Nombre</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr class="cursor-pointer">
-                                                <td>1</td>
-                                                <td>2335</td>
-                                                <td class="text-muted">
-                                                    INVERSIONES
-                                                </td>
-                                            </tr>
-                                            <tr class="cursor-pointer">
-                                                <td>2</td>
-                                                <td>5665</td>
-                                                <td class="text-muted">
-                                                    ADMINISTRACION
-                                                </td>
-                                            </tr>
-                                            <tr class="cursor-pointer">
-                                                <td>3</td>
-                                                <td>4223</td>
-                                                <td class="text-muted">
-                                                    INVERSIONES
-                                                </td>
-                                            </tr>
-                                            <tr class="cursor-pointer">
-                                                <td>4</td>
-                                                <td>5566    </td>
-                                                <td class="text-muted">
-                                                    ADMINISTRACION
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                        <div>Hombres
+                                            <span class="badge badge-outline text-azure">51</span>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <span class="text-azure d-inline-flex align-items-center lh-1">
+                                                51% <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-man" width="24" height="24"
+                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M10 16v5"></path>
+                                                    <path d="M14 16v5"></path>
+                                                    <path d="M9 9h6l-1 7h-4z"></path>
+                                                    <path d="M5 11c1.333 -1.333 2.667 -2 4 -2"></path>
+                                                    <path d="M19 11c-1.333 -1.333 -2.667 -2 -4 -2"></path>
+                                                    <path d="M12 4m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
 
-                                    <!-- PAGINATION -->
-                                    <div class="container">
-                                        <ul class="pagination mt-3 justify-content-center">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar bg-azure" style="width: 51%" role="progressbar"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                            aria-label="75% Complete">
+                                            <!-- <span class="visually-hidden">75% Complete</span> -->
+                                        </div>
+                                    </div>
 
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
-                                                        height="24" viewBox="0 0 24 24" stroke-width="2"
-                                                        stroke="currentColor" fill="none" stroke-linecap="round"
-                                                        stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                        <path d="M15 6l-6 6l6 6"></path>
-                                                    </svg>
-                                                    prev
-                                                </a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">
-                                                    next
+                                    <!--  -->
+                                    <div class="d-flex mb-3 mt-3">
 
-                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24"
-                                                        height="24" viewBox="0 0 24 24" stroke-width="2"
-                                                        stroke="currentColor" fill="none" stroke-linecap="round"
-                                                        stroke-linejoin="round">
-                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                        <path d="M9 6l6 6l-6 6"></path>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        <div>Mujeres <span class="badge badge-outline text-blue ">48</span></div>
+                                        <div class="ms-auto">
+                                            <span class="text-blue d-inline-flex align-items-center lh-1">
+                                                49% <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-woman" width="24" height="24"
+                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M10 16v5"></path>
+                                                    <path d="M14 16v5"></path>
+                                                    <path d="M8 16h8l-2 -7h-4z"></path>
+                                                    <path d="M5 11c1.667 -1.333 3.333 -2 5 -2"></path>
+                                                    <path d="M19 11c-1.667 -1.333 -3.333 -2 -5 -2"></path>
+                                                    <path d="M12 4m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
 
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar bg-blue" style="width: 49%" role="progressbar"
+                                            aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"
+                                            aria-label="49% Complete">
+                                            <!-- <span class="visually-hidden">75% Complete</span> -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- BUGDET CARD -->
-                        <div class="col-md-6 col-lg-6 mt-4">
-                            <div class="row row-cards mb-3">
-                                <div class="col-sm-6 col-lg-6">
-                                    
-                                    <div class="card card-md card-link card-link-pop ">
-                                        <div class="card-status-start bg-primary"></div>
-                                        <div class="card-body">
-                                            <div class="row align-items-center">
-                                                <div class="col-auto">
-                                                    <span
-                                                        class="bg-green text-white avatar"><!-- Download SVG icon from http://tabler-icons.io/i/currency-dollar -->
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report-money" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
-                                                            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
-                                                            <path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"></path>
-                                                            <path d="M12 17v1m0 -8v1"></path>
-                                                         </svg>
-                                                    </span>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="font-weight-medium">
-                                                        Valor mercado
-                                                    </div>
-                                                    <div class="text-muted">
-                                                        200000
-                                                    </div>
+                        <!-- CHART AVERAGE HOUR BY SEX -->
+                        <div class="col-md-6 col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div class="subheader">Horas en promedio por trabajador</div>
+                                        <div class="ms-auto lh-1">
+                                            <div class="dropdown">
+                                                <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">Año 2022</a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <!-- <a class="dropdown-item active" href="#">Año 2022</a>   -->
+                                                    <a class="dropdown-item" href="#">Año 2019</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-6 col-lg-6">
-                                    <div class="card card-md card-link card-link-pop">
-                                        <div class="card-status-start bg-primary"></div>
-                                        <div class="card-body">
-                                            <div class="row align-items-center">
-                                                <div class="col-auto">
-                                                    <span
-                                                        class="bg-cyan text-white avatar"><!-- Download SVG icon from http://tabler-icons.io/i/shopping-cart -->
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coins" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                            <path d="M9 14c0 1.657 2.686 3 6 3s6 -1.343 6 -3s-2.686 -3 -6 -3s-6 1.343 -6 3z"></path>
-                                                            <path d="M9 14v4c0 1.656 2.686 3 6 3s6 -1.344 6 -3v-4"></path>
-                                                            <path d="M3 6c0 1.072 1.144 2.062 3 2.598s4.144 .536 6 0c1.856 -.536 3 -1.526 3 -2.598c0 -1.072 -1.144 -2.062 -3 -2.598s-4.144 -.536 -6 0c-1.856 .536 -3 1.526 -3 2.598z"></path>
-                                                            <path d="M3 6v10c0 .888 .772 1.45 2 2"></path>
-                                                            <path d="M3 11c0 .888 .772 1.45 2 2"></path>
-                                                         </svg>
-                                                    </span>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="font-weight-medium">
-                                                        Costo OTIC
-                                                    </div>
-                                                    <div class="text-muted">
-                                                        200000
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="h1 mb-3 mt-2">
+                                        64
+                                    </div>
+                                    <div class="d-flex mb-2">
+
+                                        <div>Hombres
+                                            <span class="badge badge-outline text-azure">62</span>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <span class="text-azure d-inline-flex align-items-center lh-1">
+                                                62% <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-man" width="24" height="24"
+                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M10 16v5"></path>
+                                                    <path d="M14 16v5"></path>
+                                                    <path d="M9 9h6l-1 7h-4z"></path>
+                                                    <path d="M5 11c1.333 -1.333 2.667 -2 4 -2"></path>
+                                                    <path d="M19 11c-1.333 -1.333 -2.667 -2 -4 -2"></path>
+                                                    <path d="M12 4m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar bg-azure" style="width: 62%" role="progressbar"
+                                            aria-valuenow="51" aria-valuemin="0" aria-valuemax="100"
+                                            aria-label="75% Complete">
+                                            <!-- <span class="visually-hidden">75% Complete</span> -->
+                                        </div>
+                                    </div>
+
+                                    <!--  -->
+                                    <div class="d-flex mb-3 mt-3">
+
+                                        <div>Mujeres
+                                            <span class="badge badge-outline text-blue">54</span>
+
+                                        </div>
+                                        <div class="ms-auto">
+                                            <span class="text-blue d-inline-flex align-items-center lh-1">
+                                                54% <!-- Download SVG icon from http://tabler-icons.io/i/trending-up -->
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-woman" width="24" height="24"
+                                                    viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M10 16v5"></path>
+                                                    <path d="M14 16v5"></path>
+                                                    <path d="M8 16h8l-2 -7h-4z"></path>
+                                                    <path d="M5 11c1.667 -1.333 3.333 -2 5 -2"></path>
+                                                    <path d="M19 11c-1.667 -1.333 -3.333 -2 -5 -2"></path>
+                                                    <path d="M12 4m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="progress progress-sm">
+                                        <div class="progress-bar bg-blue" style="width: 54%" role="progressbar"
+                                            aria-valuenow="49" aria-valuemin="0" aria-valuemax="100"
+                                            aria-label="75% Complete">
+                                            <!-- <span class="visually-hidden">75% Complete</span> -->
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
+                        </div>
 
-                            <div class="row row-cards">
-                                <div class="col-md-12 col-lg-12">
-                                    <div class="card card-md card-link card-link-pop">
-                                        <div class="card-status-start bg-primary"></div>
-                                        <div class="card-body">
-                                            <div class="row align-items-center">
-                                                <div class="col-auto">
-                                                    <span
-                                                        class="bg-twitter text-white avatar"><!-- Download SVG icon from http://tabler-icons.io/i/brand-twitter -->
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-books" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                                            <path d="M5 4m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z"></path>
-                                                            <path d="M9 4m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z"></path>
-                                                            <path d="M5 8h4"></path>
-                                                            <path d="M9 16h4"></path>
-                                                            <path d="M13.803 4.56l2.184 -.53c.562 -.135 1.133 .19 1.282 .732l3.695 13.418a1.02 1.02 0 0 1 -.634 1.219l-.133 .041l-2.184 .53c-.562 .135 -1.133 -.19 -1.282 -.732l-3.695 -13.418a1.02 1.02 0 0 1 .634 -1.219l.133 -.041z"></path>
-                                                            <path d="M14 9l4 -1"></path>
-                                                            <path d="M16 16l3.923 -.98"></path>
-                                                         </svg>
-                                                    </span>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="font-weight-medium">
-                                                        Cuenta excapacitación EXC
-                                                    </div>
-                                                    <div class="text-muted">
-                                                        200000
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                    </div>
+
+                    <!-- CHART BY MONTH AND GEN -->
+                    <div class="row row-cards mt-3 mb-3">
+                        <div class="col-md-12 col-lg-12 text-center">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2>Trabajadores inscritos por mes y género</h2>
+                                    <div id="chart-by-month-and-gen" class="mt-3"></div>
+
                                 </div>
-                               
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            
-                            <!-- FOOTER -->
-                            <footer class="footer footer-transparent d-print-none m-auto">
-                                <div class="container-xl">
-                                    <div class="row text-center align-items-center flex-row-reverses">
-            
-                                        <div class="col-lg-auto ms-lg-auto">
-                                            <ul class="list-inline list-inline-dots mb-0">
-                                                <li class="list-inline-item"><a href="./docs/" class="link-secondary">Soporte</a>
-                                                </li>
-                                                <li class="list-inline-item"><a href="./license.html" class="link-secondary">Centro
-                                                        de
-                                                        ayuda</a>
-                                                </li>
-                                                <li class="list-inline-item"><a href="https://github.com/tabler/tabler"
-                                                        target="_blank" class="link-secondary" rel="noopener">Privacidad</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-12 col-lg-auto mt-3 mt-lg-0">
-                                            <ul class="list-inline list-inline-dots mb-0">
-                                                <li class="list-inline-item">
-                                                    &copy; 2023 - Banotic todos los derechos reservados -
-                                                    <a href="." class="link-secondary">Desarrollado por Devits</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+
+                    <div class="row row-cards">
+
+                        <!-- CHART BY GEN AND GEN -->
+                        <div class="col-md-4 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2>Trabajadores inscritos por género y generación</h2>
+                                    <div id="chart" class="w-100"></div>
                                 </div>
-                            </footer>
+                            </div>
+                        </div>
+
+
+                        <!-- CHART BY DIVISION -->
+                        <div class="col-md-8 col-lg-8">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2>Trabajadores por división</h2>
+                                    <div id="chart-division"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- FOOTER -->
+                <footer class="footer footer-transparent d-print-none m-auto">
+                    <div class="container-xl">
+                        <div class="row text-center align-items-center flex-row-reverses">
+
+                            <div class="col-lg-auto ms-lg-auto">
+                                <ul class="list-inline list-inline-dots mb-0">
+                                    <li class="list-inline-item"><a href="./docs/" class="link-secondary">Soporte</a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="./license.html" class="link-secondary">Centro
+                                            de
+                                            ayuda</a>
+                                    </li>
+                                    <li class="list-inline-item"><a href="https://github.com/tabler/tabler"
+                                            target="_blank" class="link-secondary" rel="noopener">Privacidad</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                                <ul class="list-inline list-inline-dots mb-0">
+                                    <li class="list-inline-item">
+                                        &copy; 2023 - Banotic todos los derechos reservados -
+                                        <a href="." class="link-secondary">Desarrollado por Devits</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
 
         <!-- Libs JS -->
         <!-- Tabler Core -->
-        <script src="./dist/js/tabler.min.js?1674944402" defer></script>
-        <script src="./dist/js/demo.min.js?1674944402" defer></script>
-        <!-- <script src="./dist/js/chart.js" defer></script> -->
+        <script src="../dist/js/tabler.min.js?1674944402" defer></script>
+        <script src="../dist/js/demo.min.js?1674944402" defer></script>
+        <script src="../dist/js/chart.js" defer></script>
 
+        <!-- ChartS -->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
+        <!-- CHART BY GEN AND GEN -->
+        <script>
+            var options = {
+                chart: {
+                    type: "donut",
+                    fontFamily: 'inherit',
+                    height: 240,
+                    sparkline: {
+                        enabled: true
+                    },
+                    animations: {
+                        enabled: false
+                    },
+                },
+                fill: {
+                    opacity: 1,
+                },
+                series: [44, 55, 12, 2],
+                labels: ["GEN Z", "GEN B", "GEN M", "GEN X"],
+                tooltip: {
+                    theme: 'dark'
+                },
+                grid: {
+                    strokeDashArray: 4,
+                },
+                colors: ['#1877F2', '#17a2b8', '#2aa13d', '#f76707'],
+                legend: {
+                    show: true,
+                    position: 'bottom',
+                    offsetY: 12,
+                    markers: {
+                        width: 10,
+                        height: 10,
+                        radius: 100,
+                    },
+                    itemMargin: {
+                        horizontal: 8,
+                        vertical: 8
+                    },
+                },
+                tooltip: {
+                    fillSeriesColor: false
+                },
+            }
+
+            var chart = new ApexCharts(document.querySelector("#chart"), options);
+            chart.render();
+        </script>
+
+        <!-- CHART BY MONTH AND GEN -->
+        <script>
+            var options = {
+                chart: {
+                    type: "area",
+                    fontFamily: 'inherit',
+                    height: 350,
+                    parentHeightOffset: 0,
+                    toolbar: {
+                        show: false,
+                    },
+                    animations: {
+                        enabled: false
+                    },
+                },
+                dataLabels: {
+                    enabled: false,
+                },
+                fill: {
+                    opacity: .16,
+                    type: 'solid'
+                },
+                stroke: {
+                    width: 2,
+                    lineCap: "round",
+                    curve: "smooth",
+                },
+                series: [{
+                    name: "Mujeres",
+                    data: [56, 40, 39, 47, 34, 48, 44, 33, 23, 36, 23, 37]
+                }, {
+                    name: "Hombres",
+                    data: [45, 43, 30, 23, 38, 39, 54, 21, 26, 43, 22, 13]
+                }],
+                tooltip: {
+                    theme: 'dark'
+                },
+                grid: {
+                    padding: {
+                        top: -20,
+                        right: 0,
+                        left: -4,
+                        bottom: -4
+                    },
+                    strokeDashArray: 4,
+                },
+                xaxis: {
+                    labels: {
+                        padding: 0,
+                    },
+                    tooltip: {
+                        enabled: false
+                    },
+                    axisBorder: {
+                        show: false,
+                    },
+                    type: 'datetime',
+                },
+                yaxis: {
+                    labels: {
+                        padding: 4
+                    },
+                },
+                labels: [
+                    '2022-01-30', '2022-02-30', '2022-03-30', '2022-04-30', '2022-05-30', '2022-06-30', '2022-07-30', '2022-08-30', '2022-09-30', '2022-10-30', '2022-11-30', '2022-12-30'
+                ],
+                colors: ['#d6336c', '#1d60b0'],
+                legend: {
+                    show: true,
+                    position: 'bottom',
+                    offsetY: 12,
+                    markers: {
+                        width: 10,
+                        height: 10,
+                        radius: 100,
+                    },
+                    itemMargin: {
+                        horizontal: 8,
+                        vertical: 8
+                    },
+                },
+            }
+
+            var chart = new ApexCharts(document.querySelector("#chart-by-month-and-gen"), options);
+            chart.render();
+        </script>
+
+        <!-- CHART DIVISION -->
+        <script>
+
+            var options = {
+                chart: {
+                    type: "bar",
+                    fontFamily: 'inherit',
+                    // height: 240,
+                    parentHeightOffset: 0,
+                    toolbar: {
+                        show: false,
+                    },
+                    animations: {
+                        enabled: true
+                    },
+                    stacked: true,
+                },
+                plotOptions: {
+                    bar: {
+                        barHeight: '45%',
+                        horizontal: false,
+                    }
+                },
+                dataLabels: {
+                    enabled: true,
+                },
+                fill: {
+                    opacity: 0.9,
+                },
+                series: [{
+                    name: "Total trabajadores",
+                    data: [5, 6, 7, 7, 7, 9, 11, 7, 8, 4, 4]
+                }, {
+                    name: "Hombres",
+                    data: [2, 3, 5, 5, 4, 5, 6, 3, 2, 2, 1]
+                }, {
+                    name: "Mujeres",
+                    data: [3, 3, 2, 2, 3, 4, 5, 4, 6, 2, 3]
+                }],
+                tooltip: {
+                    theme: 'dark'
+                },
+                // grid: {
+                //     padding: {
+                //         top: -20,
+                //         right: 0,
+                //         left: -4,
+                //         bottom: -4
+                //     },
+                //     strokeDashArray: 4,
+                // },
+                xaxis: {
+                    labels: {
+                        padding: 0,
+                        // formatter: function (val) {
+                        //     return val + "K"
+                        // },
+                    },
+                    tooltip: {
+                        enabled: false
+                    },
+                    axisBorder: {
+                        show: false,
+                    },
+                    categories: ['21', '22', '24', '25', '28', '33', '32', '35', '37', '44', '42'],
+                },
+                yaxis: {
+                    labels: {
+                        padding: 4
+                    },
+                },
+                colors: ['#0b956c','#206bc4', '#4299e1'],
+                legend: {
+                    show: true,
+                    position: 'bottom',
+                    offsetY: 12,
+                    markers: {
+                        width: 10,
+                        height: 10,
+                        radius: 100,
+                    },
+                    itemMargin: {
+                        horizontal: 8,
+                        vertical: 16
+                    },
+                },
+            }
+
+            var chart = new ApexCharts(document.querySelector("#chart-division"), options);
+            chart.render();
+        </script>
 </body>
 
 </html>
